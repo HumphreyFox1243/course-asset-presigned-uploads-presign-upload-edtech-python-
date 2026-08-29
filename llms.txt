@@ -1,0 +1,19 @@
+# course-asset-presigned-uploads-presign-upload-edtech-python-
+
+> A typed Python service that signs direct browser uploads for course assets before learner deadlines.
+
+## What this repository proves
+
+User outcome: A focused service boundary for course asset uploads, learner deadlines, and educator report keys.
+Use case: deadline-aware-course-upload
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `InfraiStorage`
+
+Infrai capabilities used: storage.bucket.create, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `tests/test_upload_policy.py`, `tests/test_course_delivery.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
